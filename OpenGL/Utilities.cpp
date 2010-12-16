@@ -184,3 +184,16 @@ Geometry::Vertex Utils::randColor(float alpha)
 {
     return Vertex(Utils::randFloat(0.0f,1.0f),Utils::randFloat(0.0f,1.0f),Utils::randFloat(0.0f,1.0f),alpha);
 }*/
+
+void Utils::getSupportInfo()
+{
+    //Point information
+    GLfloat sizes[2];
+    GLfloat step;
+    glGetFloatv(GL_POINT_SIZE_RANGE, sizes);        //Range of point sizes available
+    glGetFloatv(GL_POINT_SIZE_GRANULARITY, &step);  //Interval between point sizes.
+    cout << "Point Size: " << sizes[0] << " to " << sizes[1] << endl;
+    cout << "Point Granularity" << step << endl;
+    //Note: If point size is out of range or interval, it uses the closest one.
+
+}

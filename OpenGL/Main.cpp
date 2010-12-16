@@ -76,6 +76,12 @@ void main(int argc, char **argv)
 {
     //Initialize GLUT
     glutInit(&argc, argv);
+    glutInitContextVersion(3,3);
+#ifdef COMPATIBILITY_PROFILE
+    glutInitContextProfile(GLUT_COMPATIBILITY_PROFILE);
+#else
+    glutInitContextProfile(GLUT_CORE_PROFILE);
+#endif
     glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
     glutInitWindowSize(camera.getWindowWidth(), camera.getWindowHeight());
     int x = 0, y = 0;

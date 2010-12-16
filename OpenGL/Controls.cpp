@@ -101,16 +101,11 @@ void Controls::specialKeyHandler(int key, int x, int y){
 
 void Controls::keyboardHandler(unsigned char key, int x, int y)
 {
+    //Uses w,a,s,d,r
+    camera.handleKeys(key, x, y);
+
     switch(key)
     {	
-	case 'z':
-			camera.setTranslatez( camera.getTranslatez() + -.8f );
-			glutPostRedisplay();
-			break;
-	case 'x':
-			camera.setTranslatez( camera.getTranslatez() + .8f);
-			glutPostRedisplay();
-			break;
     case 'i':   //Prints the top left information on the screen
         state.setPrintInfoOnScreen(!state.getPrintInfoOnScreen());
         glutPostRedisplay();
@@ -126,40 +121,10 @@ void Controls::keyboardHandler(unsigned char key, int x, int y)
         state.setDrawAxis(!state.getDrawAxis());
         glutPostRedisplay();
         break;
-    case 'w':
-        camera.forwardb(2.0f);
-		glutPostRedisplay();
-        break;
-    case 'a':
-        camera.leftr(2.0f);
-		glutPostRedisplay();
-        break;
-    case 's':
-        camera.forwardb(-2.0f);
-        glutPostRedisplay();
-	    break;
-    case 'd':
-        camera.leftr(-2.0f);
-        glutPostRedisplay();
-        break;
-
-   /* case 'd':
+        /* case 'd':
         state.setDrawLights(!state.getDrawLights());
         glutPostRedisplay();
         break;*/
-    case 'r':   //Resets all transformations
-        camera.position.x = 15.0f;
-	    camera.position.y =45.0f;
-	    camera.position.z = 90.0f;
-	    camera.look.x = 0.0f;
-	    camera.look.y = -0.2f;
-	    camera.look.z = -1.0f;
-        camera.look.normalize();
-	    camera.up.x=0.0f;
-	    camera.up.y=1.0f;
-	    camera.up.z=0.0f;
-        glutPostRedisplay();
-        break;
     case 't':
         if(state.getTest() == 3) 
         { 

@@ -22,6 +22,8 @@ public:
     void printInfo() const;
     ///Prints the initial transformation values to the command window
     void printTransformations() const;
+    ///Handles keyboard input;
+    void handleKeys(unsigned char key, int x, int y);
 
     ///TODO: Doesn't work exactly as I want it to
     void moveTo3DSCamera(Model &model);

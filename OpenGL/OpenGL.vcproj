@@ -185,6 +185,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Geometry.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\Lights.cpp"
 				>
 			</File>
@@ -194,6 +198,10 @@
 			</File>
 			<File
 				RelativePath=".\Model.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Parser.cpp"
 				>
 			</File>
 			<File
@@ -227,6 +235,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Geometry.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Lights.h"
 				>
 			</File>
@@ -236,6 +248,10 @@
 			</File>
 			<File
 				RelativePath=".\Model.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Parser.h"
 				>
 			</File>
 			<File
@@ -318,75 +334,6 @@
 			</File>
 			<File
 				RelativePath=".\Main.cpp"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="CMS"
-			>
-			<File
-				RelativePath=".\CMS.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\CMS.h"
-				>
-			</File>
-			<File
-				RelativePath=".\CMS2d.cpp"
-				DeploymentContent="true"
-				>
-			</File>
-			<File
-				RelativePath=".\CMS2d.h"
-				>
-			</File>
-			<File
-				RelativePath=".\CMS3d.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\CMS3d.h"
-				>
-			</File>
-			<File
-				RelativePath=".\CMSModel.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\CMSModel.h"
-				>
-			</File>
-			<File
-				RelativePath=".\CMSModel3D.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\CMSModel3D.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Geometry.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Geometry.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Grid.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Grid.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Parser.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Parser.h"
 				>
 			</File>
 		</Filter>

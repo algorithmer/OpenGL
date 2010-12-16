@@ -8,7 +8,7 @@
 
 #include "Defines.h"
 #include <math.h>        ///< For fabs
-#define  EPSILON .0001           ///< For use when comparing floats.
+
 #define INFINITY FLT_MAX ///< To signify a vertical line
 
 namespace Geometry

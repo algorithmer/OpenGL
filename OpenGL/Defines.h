@@ -13,6 +13,21 @@
 using namespace std;
 
 #define DEBUG_MESSAGES
+#define  EPSILON .00001           ///< For use when comparing floats.
+
+//#define CORE_PROFILE
+#define COMPATIBILITY_PROFILE
+
+#if defined (CORE_PROFILE) && defined (COMPATIBILITY_PROFILE)
+#error Cannot define both CORE and COMPATIBILITY profiles.
+#endif
+
+//#define USING_GLUT
+#define USING_FREEGLUT
+
+#if defined (USING_GLUT) && defined (USING_FREEGLUT)
+#error Cannot define both USING_GLUT and USING_FREEGLUT.
+#endif
 
 #define RESOURCE_DIR "..\\Resources\\"
 #define WINDOW_TITLE "Continuous Model Synthesis"

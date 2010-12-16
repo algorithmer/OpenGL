@@ -74,6 +74,8 @@ namespace Utils
 
     void quicksortWithInsertion(int *a, int left, int right);
 
+    void getSupportInfo();
+
     //Geometry::Vertex randColor(float alpha = 1.0f);
 }
 
